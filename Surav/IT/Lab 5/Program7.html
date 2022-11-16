@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 7</title>
+	<script type="text/javascript">
+		function compute(){
+			var num=parseInt(document.getElementById("num").value);
+			let multiple = '';
+		for(let i=1;i<=10;i++){
+			multiple = multiple + num+ "*" + i + "=" + num * i+'<br>'
+		}
+			document.getElementById('output').innerHTML= multiple
+	}
+	</script>
+</head>
+<body>
+	<form>
+		Enter a number: <input type="text" id="num"><br>
+		<input type="button" id="mutiply" value="Calculate" onclick="compute()">
+		<p id=output></p>
+	</form>
+</body>
+</html>
+

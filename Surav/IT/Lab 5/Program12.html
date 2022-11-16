@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 12</title>
+	<script type="text/javascript">
+		function temperature(){
+			var f=parseInt(document.getElementById("temp").value);
+			var c=((f-32)/9)*5;
+			alert("Temperature in Celsius is: "+c);
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Enter temperature in Fahrenheit: <input type="text" id="temp"><br>
+		<input type="button" value="Convert" onclick="temperature()">
+	</form>
+
+</body>
+</html>

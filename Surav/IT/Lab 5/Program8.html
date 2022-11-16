@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 8</title>
+	<script type="text/javascript">
+		function armstrong(){
+			var num= parseInt(document.getElementById("num").value);
+			var arm=num;
+			const length=document.getElementById("num").value.length;
+			var sum=0;
+			while(num>0){
+				var rem=parseInt(num%10);
+				sum=sum+(rem**length);
+				num=parseInt(num/10);
+			}
+			if(arm==sum){
+				alert(arm+" is Armstrong number");
+			}
+			else{
+				alert(arm+" is not Armstrong number")
+			}
+		}
+
+		function palindrome(){
+			var num=parseInt(document.getElementById("num").value);
+			var arm=num;
+			const length=document.getElementById("num").value.length;
+			var sum=0;
+			while(num>0){
+				var rem=parseInt(num%10);
+				sum=sum*10+rem;
+				num=parseInt(num/10);
+			}
+			if(arm==sum){
+				alert(arm+" is palindrome number");
+			}
+			else{
+				alert(arm+" is not palindrome number")
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Enter number: <input type="text" id="num"><br>
+		<input type="button" value="Calculate Armstrong" onclick="armstrong()"><br>
+		<input type="button" value="Calculate Palindrome" onclick="palindrome()">
+	</form>
+</body>
+</html>

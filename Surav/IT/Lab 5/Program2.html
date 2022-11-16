@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 3</title>
+	<script type="text/javascript">
+		function tax(){
+			var amount=parseInt(document.getElementById("amount").value);
+			var total_amt= amount+(5/100)*amount;
+			alert("The total amount is " +total_amt)
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Amount: <input type="text"  name="" id="amount">
+		<input type="button" name="amount" value="Calculate" onclick="tax()">
+	</form>
+</body>
+</html>

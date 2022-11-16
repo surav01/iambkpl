@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function sum(){
+			var num1= parseInt(document.getElementById("first_num").value)
+			var num2= parseInt(document.getElementById("second_num").value)
+
+			var sum= num1+num2;
+			alert("sum is "+sum);
+		}
+		function sub(){
+			var num1= parseInt(document.getElementById("first_num").value)
+			var num2= parseInt(document.getElementById("second_num").value)
+
+			var sub= num1-num2;
+			alert("difference is "+sub);
+		}
+		function mul(){
+			var num1= parseInt(document.getElementById("first_num").value)
+			var num2= parseInt(document.getElementById("second_num").value)
+
+			var mul= num1*num2;
+			alert("product is "+mul);
+		}
+		function div(){
+			var num1= parseInt(document.getElementById("first_num").value)
+			var num2= parseInt(document.getElementById("second_num").value)
+
+			var div= num1/num2;
+			alert("division is "+div);
+		}
+		function mod(){
+			var num1= parseInt(document.getElementById("first_num").value)
+			var num2= parseInt(document.getElementById("second_num").value)
+
+			var mod= num1%num2;
+			alert("modulus is "+mod);
+		}
+	</script>
+</head>
+<body>
+	<form>
+		First Number: <input type="text" name="first_num" id="first_num"><br>
+		Second Number: <input type="text" name="second_num" id="second_num"><br>
+
+		<input type="button" name="" value="Add" onclick="sum()">
+		<input type="button" name="" value="Sub" onclick="sub()">
+		<input type="button" name="" value="Mul" onclick="mul()">
+		<input type="button" name="" value="Div" onclick="div()">
+		<input type="button" name="" value="Modulus" onclick="mod()">
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 4</title>
+	<script type="text/javascript">
+		function digits(){
+			var num=parseInt(document.getElementById("num").value);
+			const length = document.getElementById("num").value.length
+			var sum = 0;
+			for(i=0;i<length;i++){
+				var rem = parseInt(num%10);
+				sum= rem+sum;
+				num=num/10
+			}
+			document.getElementById("sum").value=sum;
+		}
+	</script>
+</head>
+<body>
+	<form>
+		3 digit number: <input type="text"  name="" id="num"><br>
+		Sum: <input type="text" name="" id="sum"><br>
+		<input type="button" name="" value="Calculate" onclick="digits()">
+	</form>
+</body>
+</html>

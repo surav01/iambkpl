@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 10</title>
+	<script type="text/javascript">
+		function check(){
+			var real_num=parseInt(Math.random() * 10);
+			var guess_num=parseInt(document.getElementById("num").value);
+			alert(real_num);
+			if(real_num==guess_num){
+				alert("Good Work");
+			} 
+			else{
+				alert("Not Matched");
+			}
+		}
+	</script>
+</head>
+<body>
+	Enter a number between 1 to 10: <input type="text" id="num"><br>
+	<input type="button" value="Check" onclick="check()">
+</body>
+</html>

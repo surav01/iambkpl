@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 5</title>
+	<script type="text/javascript">
+		function compute(){
+			var percent = parseInt(document.getElementById("percent").value);
+			if(percent>=80){
+				alert("Distinction");
+			}
+			else if(percent>60 && percent<79){
+				alert("First Division");
+			}
+			else if(percent>45 && percent<59){
+				alert("Second Division");
+			}
+			else if(percent>32 && percent<44){
+				alert("Third Division");
+			}
+			else{
+				alert("Fail");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Enter your percentage: <input type="text" id="percent">
+		<input type="button" value="Calculate" onclick="compute()">
+	</form>
+
+</body>
+</html>

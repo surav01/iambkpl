@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 11</title>
+	<script type="text/javascript">
+		function mul(){
+			var num1= parseInt(document.getElementById("first_num").value)
+			var num2= parseInt(document.getElementById("second_num").value)
+
+			var mul= num1*num2;
+			alert("product is "+mul);
+		}
+		function div(){
+			var num1= parseInt(document.getElementById("first_num").value)
+			var num2= parseInt(document.getElementById("second_num").value)
+
+			var div= num1/num2;
+			alert("division is "+div);
+		}
+		</script>	
+</head>
+<body>
+	<form>
+		First Number: <input type="text" name="first_num" id="first_num"><br>
+		Second Number: <input type="text" name="second_num" id="second_num"><br>
+		<input type="button" name="" value="Mul" onclick="mul()">
+		<input type="button" name="" value="Div" onclick="div()">
+	</form>
+
+</body>
+</html>

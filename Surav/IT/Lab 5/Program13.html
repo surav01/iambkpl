@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 13</title>
+	<script type="text/javascript">
+		function check(){
+			var a=parseInt(document.getElementById("first").value);
+			var b=parseInt(document.getElementById("second").value);
+			if(a>b){
+				diff=a-b;
+				alert("As A is greater than B, the difference is: "+diff);
+			}
+			else{
+				sum=a+b;
+				alert("As A is greater than B, the sum is: "+sum);
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Enter 1st number: <input type="text" id="first"><br>
+		Enter 2nd number: <input type="text" id="second"><br>
+		<input type="button" value="Check" onclick="check()">
+	</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Program 6</title>
+	<script type="text/javascript">
+		function compute(){
+			var a=parseInt(document.getElementById("first").value);
+			var b=parseInt(document.getElementById("second").value);
+			var c=parseInt(document.getElementById("third").value);
+			if (a>b && a>c){
+				alert(a+" is the largest");
+			}
+			else if(b>a && b>c){
+				alert(b+" is the largest");
+			}
+			else{
+				alert(c+" is the largest");
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Enter first number: <input type="text" id="first"><br>
+		Enter second number: <input type="text" id="second"><br>
+		Enter third number: <input type="text" id="third"><br>
+		<input type="button" id="calculate" value="Calculate" onclick="compute()">
+	</form>
+
+</body>
+</html>
